@@ -1,0 +1,40 @@
+To push a whole directory with multiple files using Git, here are the main approaches:
+
+1. Push all changes in the current directory:
+
+git add .
+git commit -m "Your commit message"
+git push
+
+2. Push a specific directory:
+
+git add path/to/directory/
+git commit -m "Your commit message"
+git push
+
+3. Push all changes across the entire repository:
+
+git add -A
+git commit -m "Your commit message"
+git push
+
+Key commands explained:
+
+git add . or git add -A — stages all modified/new files for commit
+git add path/to/directory/ — stages only files in a specific directory
+git commit -m "message" — creates a commit with your changes
+git push — sends commits to your remote repository (usually GitHub, GitLab, etc.)
+From VS Code terminal:
+You can run these commands in the integrated terminal. For your workspace at test, navigate there and run:
+
+cd d:\test
+git add .
+git commit -m "Add/update files"
+git push
+
+If you haven't initialized Git yet, first run:
+
+git init
+git remote add origin <your-repo-url>
+git branch -M main
+git push -u origin main
